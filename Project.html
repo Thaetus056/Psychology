@@ -1,60 +1,90 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset-8>
-        <title>Heega Sulu!</title>
-        <link rel="stylesheet" href="./Project.css">
-    </head>
-    <body>
-        <h1 class="headline">Heega sulu on yulu!!! Get Heega'ed on!!</h1>
-        <!--Link the tables to random places-->
-        <div class="main-category">
-                <p class="category"><a href="www.youtube.com">Home</a></p>
-                <p class="category"><a href="">Blog</a></p>
-                <p class="category"><a href="">Tutorials</a></p>
-                <!-- LINK SIMP TO A PAGE SAYING "Why are you here? What's wrong with you??"-->
-                <!-- It'll be a private project-->
-                <p class="category"><a href="./Simp.html">Simp</a></p>
-                <p class="category"><a href="">Contact Us</a></p>
-        </div>
-        <!-- Advertise something stupid here-->
-        <div>
-            <h2 class="sub-headline">The Apple Doesn't Fall Far From The Tree!</h2>
-            <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Maxime reprehenderit incidunt nesciunt similique 
-                mollitia ea illum quos doloremque accusantium! Adipisci 
-                veniam culpa animi cumque at! 
-                Nam unde aperiam veniam repellendus?</p>
-        </div>
-        <!-- Image to left, words to right-->
-        <div class="left-right">
-            <img src="https://wallpapers.com/images/featured/coding-background-9izlympnd0ovmpli.jpg" class="img" style="float: left;">
-            <div class="text">
-                <p style="float: right;">Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Eligendi odio 
-                labore iste, neque debitis qui magnam molestiae 
-                ducimus quisquam, corrupti, nisi quibusdam omnis 
-                sed consequuntur esse repellendus. Doloribus, est eveniet.</p>
-            </div>
-        </div>
-        <div class="left-right">
-            <p class="text" style="float: left;">Lorem ipsum dolor sit amet consectetur adipisicing 
-                elit. Beatae facere adipisci voluptatem et, natus 
-                repudiandae aperiam veritatis praesentium nobis? 
-                Dicta officia unde autem perspiciatis, 
-                quis eveniet! Veritatis fugit culpa omnis!</p>
-                <img src="https://wallpapers.com/images/featured/coding-background-9izlympnd0ovmpli.jpg" class="img" style="float: right;">
-        </div>
-        <div class="left-right">
-            <img src="https://wallpapers.com/images/featured/coding-background-9izlympnd0ovmpli.jpg" class="img" style="float: left;">
-            <div class="text">
-                <p style="float: right;">Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Eligendi odio 
-                labore iste, neque debitis qui magnam molestiae 
-                ducimus quisquam, corrupti, nisi quibusdam omnis 
-                sed consequuntur esse repellendus. Doloribus, est eveniet.</p>
-            </div> 
-        </div>
-        <!-- add a button-->
-    </body>
-</html>
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+.headline {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    padding: 100px 0px;
+    background-color:black;
+    color:white;
+    text-align: center;
+}
+.main-category {
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+    background-color:cornflowerblue;
+    width: 100%;
+}
+.category {
+    width: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: inherit;
+    padding-right: 18px;
+    display: inline-block;
+}
+/* unvisited link */
+a:link {
+color: white;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: white;
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: hotpink;
+text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+color: blue;
+text-decoration: underline;
+}
+.left-right {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.img {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+.text {
+    margin: auto;
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+    display: inline-block;
+    padding-top: 50px;
+    font-size: 20px;
+    background-color:cadetblue;
+}
+.normal-text {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-headline {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
